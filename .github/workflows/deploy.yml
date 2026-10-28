@@ -27,6 +27,3 @@ jobs:
 
       - name: Verify assumed AWS identity
         run: aws sts get-caller-identity
-
-      - name: Confirm OIDC authentication succeeded
-        run: echo "SUCCESS: GitHub Actions authenticated to AWS using OIDC."
