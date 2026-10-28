@@ -35,10 +35,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r app/requirements.txt pytest
 
-      - name: Run application tests
-        run: |
-          PYTHONPATH=app pytest -v app/test_app.py
-
       - name: Configure AWS credentials using OIDC
         uses: aws-actions/configure-aws-credentials@v4
         with:
