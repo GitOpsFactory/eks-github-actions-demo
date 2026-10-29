@@ -1,4 +1,4 @@
-name: Validate AWS OIDC Authentication
+name: Validate 
 
 on:
   workflow_dispatch:
