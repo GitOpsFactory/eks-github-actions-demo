@@ -1,4 +1,5 @@
-name: Validate 
+
+name: Validate AWS OIDC Authentication
 
 on:
   workflow_dispatch:
@@ -15,7 +16,6 @@ permissions:
 jobs:
   validate-oidc:
     runs-on: ubuntu-latest
-
     steps:
       - name: Configure AWS credentials using OIDC
         uses: aws-actions/configure-aws-credentials@v4
